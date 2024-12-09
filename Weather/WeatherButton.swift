@@ -16,10 +16,15 @@ struct WeatherButton: View {
     var body: some View {
         Text(title)
             .frame(width: 250, height: 50)
-            .font(.system(size: 20, weight: .semibold, design: .default))
+            .background(backgroundColor.gradient)
             .foregroundColor(textColor)
-            .background(backgroundColor)
+            .font(.system(size: 20, weight: .semibold))
             .cornerRadius(10)
             .padding()
     }
 }
+
+#Preview {
+    WeatherButton(title: "Test Button", textColor: .white, backgroundColor: .black)
+}
+

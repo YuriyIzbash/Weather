@@ -63,7 +63,7 @@ struct WeatherDayView: View {
             
             VStack(spacing: 8) {
                 Image(systemName: imageName)
-                    .renderingMode(.original)
+                    .symbolRenderingMode(.multicolor)
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 60, height: 60)
